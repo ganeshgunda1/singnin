@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>  body{
+    width: 100wh;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+}
+
+form{
+  transition: all 1s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+ flex-direction: column;
+ justify-content: space-evenly;
+ 
+}
+div{
+  width: 33%;
+  height: 70%;
+  background-color: rgba(0, 0, 255, 0.533);
+  border-radius: 5%;
+  transition: all 1s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+ justify-content: space-evenly;
+}
+
+input{
+    width: 50%;
+    height: 40px;
+    border-radius: 5%;
+    outline: none;
+    border: none;
+   
+}
+#sub{
+    width: 50%;
+    height: 40px;
+    outline: none;
+    border: none;
+    cursor: pointer;    
+}
+#sub:hover{
+background-color: rgba(0, 0, 255, 0.425);
+}
+div:hover{
+    background-color: rgba(0, 0, 255, 0.127);
+    transform: scale(1.1);
+}
+
+</style>
+   
+        <form action="sinup"method="post">
+        <div>
+            <h1>sin up page</h1>
+            <input type="text" placeholder="Enter UserName"name="username"> <br>
+            <input type="password" placeholder="Enter password"name="password"><br><br>
+            <button  type="submit" id="sub">sin up</button>&nbsp;<a href="index.html" >Clickhere To login</a>
+       
+        </div>
+</body>
+</html>
